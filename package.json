@@ -23,7 +23,9 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "serve": "^13.0.2",
-    "sql-query": "^0.1.27"
+    "sql-query": "^0.1.27",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
