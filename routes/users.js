@@ -13,7 +13,7 @@ var con = mysql.createConnection({
 const router = express.Router();
 
 
-const options ={
+const options = {
     definition: {
         openapi : '3.0.0',
         info : {
