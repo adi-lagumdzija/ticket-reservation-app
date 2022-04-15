@@ -28,8 +28,12 @@ const options ={
     },
     apis : ['routes/users.js']
 }
+
+
 const swaggerSpec = swaggerJsDoc(options)
 router.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
+
+//Route for getting all users
 /**
  * @swagger
  * /users:
@@ -46,6 +50,8 @@ router.get('/', (req, res) => {
         res.send(result);
       });
     });
+
+//Route for getting all usernames
 /**
  * @swagger
  * /users/usernames:
@@ -59,10 +65,9 @@ router.get('/', (req, res) => {
 router.get('/usernames', (req, res) => {
     con.query("SELECT username FROM users", function (err, result, fields) {
         if (err) throw err;
-        // if there is no error, you have the result
         res.send(result);
       });
-})
+});
 
 
 // router.get('/:id', (req, res) => {
