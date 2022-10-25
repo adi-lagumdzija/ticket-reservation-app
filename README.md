@@ -1,0 +1,3 @@
+# ticket-reservation-app
+# Senior Design Project
+This is a web application that will help users to reserve their football match tickets. Users can choose a match and stand from a list of matches that are available. Available tickets can be filtered based on their location, date and time. When a user reserves a ticket he will get a QR Code as a confirmation of ticket reservation. All the tickets reserved by the user can be seen in their “My Tickets” section. Tickets can be also downloaded as a pdf file, so that the users can easily print them,also users will be able to delete tickets from their “My Tickets” section. Besides the user role, there will be an admin role in the system. He will be able to delete matches and see all the tickets reserved by a user.
